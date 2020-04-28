@@ -1,0 +1,947 @@
+{
+    ".meta": {
+        "comment": "", 
+        "created": 1551144837, 
+        "name": "SaaS application v1", 
+        "version": "7.4.3.2270", 
+        "version_min": ""
+    }, 
+    "Dashboard": [
+        {
+            "author": "Archana", 
+            "description": null, 
+            "name": "SaaS Application Performance", 
+            "object_type": "any", 
+            "shortcut": "spDF3", 
+            "theme": [
+                [
+                    "name", 
+                    "flat"
+                ]
+            ], 
+            "type": "summary_dashboard", 
+            "username": null
+        }
+    ], 
+    "DeviceGroup": [
+        {
+            "comment": "", 
+            "dynamic": true, 
+            "field": "type", 
+            "include_custom_devices": true, 
+            "member_set": [], 
+            "name": "SSH Servers", 
+            "value": "^extrahop.device.ssh_server$"
+        }
+    ], 
+    "Region": [
+        {
+            "dashboard": [
+                [
+                    "owner", 
+                    null
+                ], 
+                [
+                    "object_type", 
+                    "any"
+                ], 
+                [
+                    "type", 
+                    "summary_dashboard"
+                ], 
+                [
+                    "name", 
+                    "SaaS Application Performance"
+                ]
+            ], 
+            "name": "SaaS application Performance", 
+            "uuid": "8e07c9d7e8b94a7094f01404ff35e7da"
+        }
+    ], 
+    "RegionDimension": [
+        {
+            "grid": [
+                [
+                    "name", 
+                    "pc"
+                ]
+            ], 
+            "h": 9, 
+            "region": [
+                [
+                    "uuid", 
+                    "8e07c9d7e8b94a7094f01404ff35e7da"
+                ]
+            ], 
+            "w": 12, 
+            "x": 0, 
+            "y": 0
+        }
+    ], 
+    "SeriesGroupMetric": [
+        {
+            "calculation_opts": null, 
+            "calculation_type": "count", 
+            "index": 0, 
+            "metric": [
+                [
+                    "category", 
+                    [
+                        [
+                            "object_type", 
+                            "application"
+                        ], 
+                        [
+                            "name", 
+                            "ssl"
+                        ]
+                    ]
+                ], 
+                [
+                    "type", 
+                    "count"
+                ], 
+                [
+                    "field_name", 
+                    "alerts"
+                ]
+            ], 
+            "options": "{}", 
+            "topn_key": null, 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "2e3a6c61917947129797ba62cc5b552a"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "calculation_opts": null, 
+            "calculation_type": "count", 
+            "index": 1, 
+            "metric": [
+                [
+                    "category", 
+                    [
+                        [
+                            "object_type", 
+                            "application"
+                        ], 
+                        [
+                            "name", 
+                            "ssl"
+                        ]
+                    ]
+                ], 
+                [
+                    "type", 
+                    "count"
+                ], 
+                [
+                    "field_name", 
+                    "rsp_rto"
+                ]
+            ], 
+            "options": "{}", 
+            "topn_key": null, 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "c44af60cf3e248d38c0c090e7adb783a"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "calculation_opts": null, 
+            "calculation_type": "count", 
+            "index": 0, 
+            "metric": [
+                [
+                    "category", 
+                    [
+                        [
+                            "object_type", 
+                            "application"
+                        ], 
+                        [
+                            "name", 
+                            "ssl"
+                        ]
+                    ]
+                ], 
+                [
+                    "type", 
+                    "count"
+                ], 
+                [
+                    "field_name", 
+                    "req_rto"
+                ]
+            ], 
+            "options": "{}", 
+            "topn_key": null, 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "c44af60cf3e248d38c0c090e7adb783a"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "calculation_opts": null, 
+            "calculation_type": "mean", 
+            "index": 1, 
+            "metric": [
+                [
+                    "category", 
+                    [
+                        [
+                            "object_type", 
+                            "application"
+                        ], 
+                        [
+                            "name", 
+                            "net"
+                        ]
+                    ]
+                ], 
+                [
+                    "type", 
+                    "dataset"
+                ], 
+                [
+                    "field_name", 
+                    "rtt"
+                ]
+            ], 
+            "options": "{}", 
+            "topn_key": null, 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "5a73dc5c6cc6412c988c88d22de4b4b1"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "calculation_opts": null, 
+            "calculation_type": "mean", 
+            "index": 0, 
+            "metric": [
+                [
+                    "category", 
+                    [
+                        [
+                            "object_type", 
+                            "application"
+                        ], 
+                        [
+                            "name", 
+                            "net"
+                        ]
+                    ]
+                ], 
+                [
+                    "type", 
+                    "dataset"
+                ], 
+                [
+                    "field_name", 
+                    "tprocess"
+                ]
+            ], 
+            "options": "{}", 
+            "topn_key": null, 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "5a73dc5c6cc6412c988c88d22de4b4b1"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "calculation_opts": null, 
+            "calculation_type": "rate", 
+            "index": 0, 
+            "metric": [
+                [
+                    "category", 
+                    [
+                        [
+                            "object_type", 
+                            "application"
+                        ], 
+                        [
+                            "name", 
+                            "net"
+                        ]
+                    ]
+                ], 
+                [
+                    "type", 
+                    "count"
+                ], 
+                [
+                    "field_name", 
+                    "rsp_l2_bytes"
+                ]
+            ], 
+            "options": "{}", 
+            "topn_key": null, 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "ba7f7534b7fc4f41b6b96547b79ba470"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "calculation_opts": null, 
+            "calculation_type": "rate", 
+            "index": 0, 
+            "metric": [
+                [
+                    "category", 
+                    [
+                        [
+                            "object_type", 
+                            "application"
+                        ], 
+                        [
+                            "name", 
+                            "net"
+                        ]
+                    ]
+                ], 
+                [
+                    "type", 
+                    "count"
+                ], 
+                [
+                    "field_name", 
+                    "req_l2_bytes"
+                ]
+            ], 
+            "options": "{}", 
+            "topn_key": null, 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "8e1716cd97cd4813889086ec6cabe4bc"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "calculation_opts": null, 
+            "calculation_type": "count", 
+            "index": 1, 
+            "metric": [
+                [
+                    "category", 
+                    [
+                        [
+                            "object_type", 
+                            "application"
+                        ], 
+                        [
+                            "name", 
+                            "ssl"
+                        ]
+                    ]
+                ], 
+                [
+                    "type", 
+                    "count"
+                ], 
+                [
+                    "field_name", 
+                    "rsp_zwnd"
+                ]
+            ], 
+            "options": "{}", 
+            "topn_key": null, 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "57140e9ca07945179e3edf3bddfe7756"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "calculation_opts": null, 
+            "calculation_type": "count", 
+            "index": 0, 
+            "metric": [
+                [
+                    "category", 
+                    [
+                        [
+                            "object_type", 
+                            "application"
+                        ], 
+                        [
+                            "name", 
+                            "ssl"
+                        ]
+                    ]
+                ], 
+                [
+                    "type", 
+                    "count"
+                ], 
+                [
+                    "field_name", 
+                    "req_zwnd"
+                ]
+            ], 
+            "options": "{}", 
+            "topn_key": null, 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "57140e9ca07945179e3edf3bddfe7756"
+                        ]
+                    ]
+                ]
+            ]
+        }
+    ], 
+    "SeriesGroupObject": [
+        {
+            "index": 0, 
+            "late_binding_capture_oid": null, 
+            "late_binding_id": null, 
+            "object_id": null, 
+            "object_key": null, 
+            "object_type": "application", 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "2e3a6c61917947129797ba62cc5b552a"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "index": 0, 
+            "late_binding_capture_oid": null, 
+            "late_binding_id": null, 
+            "object_id": null, 
+            "object_key": null, 
+            "object_type": "application", 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "c44af60cf3e248d38c0c090e7adb783a"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "index": 0, 
+            "late_binding_capture_oid": null, 
+            "late_binding_id": null, 
+            "object_id": null, 
+            "object_key": null, 
+            "object_type": "application", 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "5a73dc5c6cc6412c988c88d22de4b4b1"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "index": 0, 
+            "late_binding_capture_oid": null, 
+            "late_binding_id": null, 
+            "object_id": null, 
+            "object_key": null, 
+            "object_type": "application", 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "ba7f7534b7fc4f41b6b96547b79ba470"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "index": 0, 
+            "late_binding_capture_oid": null, 
+            "late_binding_id": null, 
+            "object_id": null, 
+            "object_key": null, 
+            "object_type": "application", 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "8e1716cd97cd4813889086ec6cabe4bc"
+                        ]
+                    ]
+                ]
+            ]
+        }, 
+        {
+            "index": 0, 
+            "late_binding_capture_oid": null, 
+            "late_binding_id": null, 
+            "object_id": null, 
+            "object_key": null, 
+            "object_type": "application", 
+            "widget_series_group": [
+                [
+                    "index", 
+                    0
+                ], 
+                [
+                    "widget", 
+                    [
+                        [
+                            "uuid", 
+                            "57140e9ca07945179e3edf3bddfe7756"
+                        ]
+                    ]
+                ]
+            ]
+        }
+    ], 
+    "Trigger": [
+        {
+            "apply_all": false, 
+            "author": "Archana", 
+            "comment": "", 
+            "debug": false, 
+            "disabled": false, 
+            "events": "[\"SSL_CLOSE\", \"SSL_OPEN\", \"SSL_RECORD\"]", 
+            "hints": "{}", 
+            "name": "SaaS applications", 
+            "script": "var appName = 'SaaS'; \n\n\nvar sslCheck = [\n\t\n\t{ cert: 'webex.com', name: ': webex'},\n    { cert: 'sharepoint.com', name: ': sharepoint'},\n\t{ cert: 'webexconnect.com', name: ': webex'},\n\t{ cert: 'outlook.com', name: ': outlook'},\n\t{ cert: 'outlook.office.com', name: ': outlook'},\n\t{ cert: 'office365.com', name: ': office365'},\n\t{ cert: 'azure.com', name: ': azure'},\n\t{ cert: 'amazonaws.com', name: ': amazonaws'},\n\t{ cert: 'officeapps.live.com', name: ': officeapps.live'},\n\t{ cert: 'microsoftonline.com', name: ': microsoftonline'},\n\t{ cert: 'office.com', name: ': office.com'},\n\t{ cert: 'office.net', name: ': office.net'},\n\t{ cert: 'microsoft.com', name: ': microsoft.com'},\n\t{ cert: 'yammer.com', name: ': yammer'},\n    { cert: 'service-now', name: ': service-now'}\n\n];\n\nswitch (event)\n{\n    case 'SSL_OPEN':\n        if (SSL.certificate && SSL.certificate.subject) {\n            var cert = SSL.certificate.subject;\n        //  debug('ssl heartbeat: ' + SSL.certificate.subject);\n            for (var i = 0; i < sslCheck.length; i++) {    \n\t\t\t    if (cert.indexOf(sslCheck[i].cert) != -1) {                     \n                    appName += sslCheck[i].name;\n                    //debug(\"SSL_FLOW_APPNAME\" + \": \" + appName);\n                    Flow.addApplication(appName, true);\n                }\n            }\n\n        }\n        break;\n    case 'SSL_RECORD':\n    case 'SSL_CLOSE':\n        if (SSL.certificate && SSL.certificate.subject) {\n            var cert = SSL.certificate.subject;\n            for (var i = 0; i < sslCheck.length; i++) {    \n\t\t\t    if (cert.indexOf(sslCheck[i].cert) != -1) {                     \n                    appName += sslCheck[i].name;\n                    //debug(\"SSL_APPNAME\" + \": \" + appName);\n                    Application(appName).commit()\n                }\n            }   \n            \n        }\n        break;\n    \n    \n\n}"
+        }
+    ], 
+    "Widget": [
+        {
+            "name": "SSL Alerts", 
+            "options": "{\"ipLabelType\": \"host\", \"ipLabelShowCustomNames\": true}", 
+            "region": [
+                [
+                    "uuid", 
+                    "8e07c9d7e8b94a7094f01404ff35e7da"
+                ]
+            ], 
+            "shortcut": null, 
+            "text_widget_content": null, 
+            "trend_calculation_opts": null, 
+            "trend_calculation_type": null, 
+            "trend_windowing_count": null, 
+            "trend_windowing_model": null, 
+            "type": "line_chart", 
+            "uuid": "2e3a6c61917947129797ba62cc5b552a"
+        }, 
+        {
+            "name": "Network Congestion", 
+            "options": "{\"ipLabelType\": \"host\", \"ipLabelShowCustomNames\": true}", 
+            "region": [
+                [
+                    "uuid", 
+                    "8e07c9d7e8b94a7094f01404ff35e7da"
+                ]
+            ], 
+            "shortcut": null, 
+            "text_widget_content": null, 
+            "trend_calculation_opts": null, 
+            "trend_calculation_type": null, 
+            "trend_windowing_count": null, 
+            "trend_windowing_model": null, 
+            "type": "column_chart", 
+            "uuid": "c44af60cf3e248d38c0c090e7adb783a"
+        }, 
+        {
+            "name": "Zero Windows", 
+            "options": "{\"ipLabelType\": \"host\", \"ipLabelShowCustomNames\": true}", 
+            "region": [
+                [
+                    "uuid", 
+                    "8e07c9d7e8b94a7094f01404ff35e7da"
+                ]
+            ], 
+            "shortcut": null, 
+            "text_widget_content": null, 
+            "trend_calculation_opts": null, 
+            "trend_calculation_type": null, 
+            "trend_windowing_count": null, 
+            "trend_windowing_model": null, 
+            "type": "line_chart", 
+            "uuid": "57140e9ca07945179e3edf3bddfe7756"
+        }, 
+        {
+            "name": "Response Bytes", 
+            "options": "{\"ipLabelType\": \"host\", \"ipLabelShowCustomNames\": true}", 
+            "region": [
+                [
+                    "uuid", 
+                    "8e07c9d7e8b94a7094f01404ff35e7da"
+                ]
+            ], 
+            "shortcut": null, 
+            "text_widget_content": null, 
+            "trend_calculation_opts": null, 
+            "trend_calculation_type": null, 
+            "trend_windowing_count": null, 
+            "trend_windowing_model": null, 
+            "type": "line_chart", 
+            "uuid": "ba7f7534b7fc4f41b6b96547b79ba470"
+        }, 
+        {
+            "name": "Request Bytes", 
+            "options": "{\"ipLabelType\": \"host\", \"ipLabelShowCustomNames\": true}", 
+            "region": [
+                [
+                    "uuid", 
+                    "8e07c9d7e8b94a7094f01404ff35e7da"
+                ]
+            ], 
+            "shortcut": null, 
+            "text_widget_content": null, 
+            "trend_calculation_opts": null, 
+            "trend_calculation_type": null, 
+            "trend_windowing_count": null, 
+            "trend_windowing_model": null, 
+            "type": "line_chart", 
+            "uuid": "8e1716cd97cd4813889086ec6cabe4bc"
+        }, 
+        {
+            "name": "End User Experience", 
+            "options": "{\"ipLabelType\": \"host\", \"ipLabelShowCustomNames\": true}", 
+            "region": [
+                [
+                    "uuid", 
+                    "8e07c9d7e8b94a7094f01404ff35e7da"
+                ]
+            ], 
+            "shortcut": null, 
+            "text_widget_content": null, 
+            "trend_calculation_opts": null, 
+            "trend_calculation_type": null, 
+            "trend_windowing_count": null, 
+            "trend_windowing_model": null, 
+            "type": "area_chart", 
+            "uuid": "5a73dc5c6cc6412c988c88d22de4b4b1"
+        }
+    ], 
+    "WidgetDimension": [
+        {
+            "grid": [
+                [
+                    "name", 
+                    "pc"
+                ]
+            ], 
+            "h": 3, 
+            "w": 6, 
+            "widget": [
+                [
+                    "uuid", 
+                    "8e1716cd97cd4813889086ec6cabe4bc"
+                ]
+            ], 
+            "x": 0, 
+            "y": 0
+        }, 
+        {
+            "grid": [
+                [
+                    "name", 
+                    "pc"
+                ]
+            ], 
+            "h": 3, 
+            "w": 6, 
+            "widget": [
+                [
+                    "uuid", 
+                    "ba7f7534b7fc4f41b6b96547b79ba470"
+                ]
+            ], 
+            "x": 6, 
+            "y": 0
+        }, 
+        {
+            "grid": [
+                [
+                    "name", 
+                    "pc"
+                ]
+            ], 
+            "h": 3, 
+            "w": 6, 
+            "widget": [
+                [
+                    "uuid", 
+                    "57140e9ca07945179e3edf3bddfe7756"
+                ]
+            ], 
+            "x": 6, 
+            "y": 6
+        }, 
+        {
+            "grid": [
+                [
+                    "name", 
+                    "pc"
+                ]
+            ], 
+            "h": 3, 
+            "w": 6, 
+            "widget": [
+                [
+                    "uuid", 
+                    "c44af60cf3e248d38c0c090e7adb783a"
+                ]
+            ], 
+            "x": 0, 
+            "y": 6
+        }, 
+        {
+            "grid": [
+                [
+                    "name", 
+                    "pc"
+                ]
+            ], 
+            "h": 3, 
+            "w": 6, 
+            "widget": [
+                [
+                    "uuid", 
+                    "2e3a6c61917947129797ba62cc5b552a"
+                ]
+            ], 
+            "x": 6, 
+            "y": 3
+        }, 
+        {
+            "grid": [
+                [
+                    "name", 
+                    "pc"
+                ]
+            ], 
+            "h": 3, 
+            "w": 6, 
+            "widget": [
+                [
+                    "uuid", 
+                    "5a73dc5c6cc6412c988c88d22de4b4b1"
+                ]
+            ], 
+            "x": 0, 
+            "y": 3
+        }
+    ], 
+    "WidgetSeriesGroup": [
+        {
+            "are_sources_combined": false, 
+            "group_by_label": "_none_", 
+            "index": 0, 
+            "is_exact_topn_match": false, 
+            "topn_key": null, 
+            "topn_max": 5, 
+            "widget": [
+                [
+                    "uuid", 
+                    "ba7f7534b7fc4f41b6b96547b79ba470"
+                ]
+            ]
+        }, 
+        {
+            "are_sources_combined": false, 
+            "group_by_label": "_none_", 
+            "index": 0, 
+            "is_exact_topn_match": false, 
+            "topn_key": null, 
+            "topn_max": 5, 
+            "widget": [
+                [
+                    "uuid", 
+                    "5a73dc5c6cc6412c988c88d22de4b4b1"
+                ]
+            ]
+        }, 
+        {
+            "are_sources_combined": false, 
+            "group_by_label": "Type", 
+            "index": 0, 
+            "is_exact_topn_match": false, 
+            "topn_key": null, 
+            "topn_max": 5, 
+            "widget": [
+                [
+                    "uuid", 
+                    "2e3a6c61917947129797ba62cc5b552a"
+                ]
+            ]
+        }, 
+        {
+            "are_sources_combined": false, 
+            "group_by_label": "_none_", 
+            "index": 0, 
+            "is_exact_topn_match": false, 
+            "topn_key": null, 
+            "topn_max": 5, 
+            "widget": [
+                [
+                    "uuid", 
+                    "c44af60cf3e248d38c0c090e7adb783a"
+                ]
+            ]
+        }, 
+        {
+            "are_sources_combined": false, 
+            "group_by_label": "_none_", 
+            "index": 0, 
+            "is_exact_topn_match": false, 
+            "topn_key": null, 
+            "topn_max": 5, 
+            "widget": [
+                [
+                    "uuid", 
+                    "57140e9ca07945179e3edf3bddfe7756"
+                ]
+            ]
+        }, 
+        {
+            "are_sources_combined": false, 
+            "group_by_label": "_none_", 
+            "index": 0, 
+            "is_exact_topn_match": false, 
+            "topn_key": null, 
+            "topn_max": 5, 
+            "widget": [
+                [
+                    "uuid", 
+                    "8e1716cd97cd4813889086ec6cabe4bc"
+                ]
+            ]
+        }
+    ]
+}
